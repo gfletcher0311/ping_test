@@ -48,7 +48,7 @@ def main():
     subprocess.call("clear", shell=True)
     while user_input != 5:
         # Prompt the user for the 5 options available
-        print("Options avialable for the ping test:\n\n")
+        print("Options available for the ping test:\n\n")
         print("(1.) Display the default gateway\n(2.) Test Local Connectivity\n(3.) Test Remote Connectivity\n(4.) Test DNS Resolution\n(5.) Exit / quit the script")
         # Simple check to make sure that user_input is actually an integer
         try:
