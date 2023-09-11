@@ -3,7 +3,7 @@
 '''
 Name: Gavin Fletcher
 Date: 9/8/23
-Version: 1.3 
+Version: 1.4
 Notes: Used as a ping test for:
 1. Display the default gateway
 2. Test Local Connectivity
@@ -40,9 +40,9 @@ def test_connection(pingTarget):
     result.wait()
     # Result will either be 0 (successful) or not 0 (unsuccessful)
     if (int(result.poll()) == 0):
-        print("Local connection (", pingTarget,") was successful")
+        print("Connection test to (", pingTarget,") was successful")
     else:
-        print("Local connection (", pingTarget,") was unsuccessful")
+        print("Connection test to (", pingTarget,") was unsuccessful")
 def main():
     user_input = None # Setting user_input so that the while loop can run
     subprocess.call("clear", shell=True)
